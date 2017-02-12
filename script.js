@@ -4,13 +4,9 @@ $(document).ready(function() {
 });
 
 $(function(){
-    var pop     = $('#pop');
-        var birdaudio = pop.find('audio')[0];
-
-    pop.hover(function(){
-       birdaudio.play();
-    }, function(){
-       birdaudio.stop();
+    var sound = $("#sound")[0];
+    $("#pop").click(function(){
+    	sound.play();
     });
 });
 
