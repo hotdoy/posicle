@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* { box-sizing:border-box; }
+
+body {
+	background-color: pink;
+	color: #FFF;
+	font-family:'Roboto';
+}
+
+::selection {
+	background: #baffaa;
+	color: #fff;
+}
+
+footer {
+	text-align: right;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+footer a {
+	color: grey;
+	font-size: 0.8em
+}
+
+footer a:hover {
+	color: grey;
+	font-size: 0.8em
+}
+
+.page-content {
+	z-index: 0;
+	margin: auto;
+}
+
+@media (max-width: 900px) {
+	.page-content {
+		max-width: 95%;
+	}
+}
+
+
+#pop { 
+	margin: auto;
+	display: block;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor: url(liklik.gif), auto;
+
+}
+
+#popctn {
+	padding-top: 10%;
+	
+}
+
+
+
+/*TEXT-----------------------------------------------------------*/
+h1 {
+
+}
+
+h2 { 
+
+}
+
+p{
+	font-size: .8em;
+	color: grey;
+}
+
+b{
+	color: #FFF;
+	font-weight: normal;
+}
+
+a{
+	font-size: 1em;
+	color: #FFF;
+	text-decoration: none;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+}
+
+a:hover{
+	font-size: 1em;
+	color: orange;
+	text-decoration: none;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+}
+
+
+/*MISC---------------------------------------------------------*/
+
+.hidden {
+	visibility: hidden;
+}
+
+.loader-bg {
+	opacity:1;
+	background-color:#000;
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:998;
+}
+
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(4deg); }
+  50%  { -webkit-transform:  rotate(-4deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+.wobble { 
+	-webkit-animation: wobble 3s infinite; 
+}
